@@ -1,9 +1,15 @@
-# Another Page
+# use-mouse-move hook
 
-```js filename="demo.js" {3} copy
-let a = 1;
-
-console.log(a);
+```tsx filename="demo.tsx" {3} copy
+const Target = () => {
+  const {position, ref} = useMouseMove();
+  
+  return (
+    <div data-testid="target" ref={ref}>
+      {position && `${position.clientX}${position.clientY}`}
+    </div>
+  )
+};
 ```
 
 ## Component
