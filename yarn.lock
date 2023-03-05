@@ -47,6 +47,14 @@
     "@types/mdx" "^2.0.0"
     "@types/react" ">=16"
 
+"@melmerrouni/custom-hooks@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@melmerrouni/custom-hooks/-/custom-hooks-1.0.2.tgz#d9fd59e3d30736dbeafe3f27743b1a8d6c479af1"
+  integrity sha512-MvdPcjvbQrcZKOsHPOMk9oRib8GXBknX6Vvd92tB7yaBK8hgg11x1+SMl46IMLQnsh2eXxBuOE0Pz6luBRxXEQ==
+  dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
 "@napi-rs/simple-git-android-arm-eabi@0.1.8":
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/@napi-rs/simple-git-android-arm-eabi/-/simple-git-android-arm-eabi-0.1.8.tgz#303bea1ec00db24466e3b3ba13de337d87c5371b"
