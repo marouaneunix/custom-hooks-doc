@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
   "use-mouse-move": "use-mouse-move",
-  "advanced": "Advanced (A Folder)",
+  "use-keydown-on-textarea": "use-keydown-on-textarea",
   "about": {
     "title": "About",
     "type": "page"

@@ -1,4 +1,4 @@
-# use-mouse-move hook
+# use-keydown-on-textarea hook
 
 ## Get Started
 
@@ -31,25 +31,22 @@ import { Tab, Tabs } from 'nextra-theme-docs'
 
 ## Example
 
-You just need to import `useMouseMove` from `@melmerrouni/custom-hooks`:
+You just need to import `useKeydownOnTextArea` from `@melmerrouni/custom-hooks`:
 
 ```tsx filename="demo.tsx" copy
 
-import {useMouseMove} from '@melmerrouni/custom-hooks';
+import {useKeydownOnTextArea} from '@melmerrouni/custom-hooks';
 
 const Target = () => {
-  const {position, ref} = useMouseMove();
-  
-  return (
-    <div data-testid="target" ref={ref}>
-      {position && `${position.clientX}${position.clientY}`}
-    </div>
-  )
+  const {code, ref} = useKeydownOnTextArea();    
+    return (
+        <textarea ref={ref} style={style} />
+    )
 };
 ```
 
 ## Demo 
 
-import UseMouseMoveHookDemo from '../components/UseMouseMoveHookDemo'
+import UseKeydownOnTextareaHookDemo from '../components/UseKeydownOnTextareaHookDemo'
  
-<UseMouseMoveHookDemo/>
+<UseKeydownOnTextareaHookDemo/>
