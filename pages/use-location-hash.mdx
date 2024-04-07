@@ -1,0 +1,63 @@
+# use-mouse-move hook
+
+## Get Started
+
+import { Callout } from 'nextra-theme-docs'
+
+
+## Description
+
+This hook is designed to interact with the URL hash (the part of the URL after the # symbol) in a web browser.
+
+
+## install
+
+You can install the package via npm or yarn:
+
+import { Tab, Tabs } from 'nextra-theme-docs'
+
+<Tabs items={['npm', 'yarn']}>
+  <Tab>
+    ```shell copy
+      npm install -d @melmerrouni/custom-hooks
+      ```
+  </Tab>
+  <Tab>
+    ```bash copy
+     yarn add @melmerrouni/custom-hooks -D
+    ```
+  </Tab>
+</Tabs>
+
+## Example
+
+You just need to import `useLocationHash` from `@melmerrouni/custom-hooks`:
+
+```tsx filename="demo.tsx" copy
+
+import {useLocationHash} from '@melmerrouni/custom-hooks';
+
+const Target = () => {
+  const {hash, updateHash: setHash} = useLocationHash();
+  
+  const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
+        
+        setHash(e.target.value);
+    }
+
+    return (
+        <>
+            <div data-testid="target">
+                {hash}   
+            </div>
+            <input value={hash} onChange={handleChange} aria-label="hash-input" />
+        </>
+    )
+};
+```
+
+## Demo 
+
+import UseLocationHashHookDemo from '../components/UseLocationHashHookDemo'
+ 
+<UseLocationHashHookDemo/>
