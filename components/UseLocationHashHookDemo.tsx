@@ -20,6 +20,7 @@ const inputStyle = {
   fontSize: "16px"
 }
 const UseLocationHashHookDemo = () => {
+  if(typeof window === 'undefined') return null;
   const {hash, updateHash: setHash} = useLocationHash();
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
