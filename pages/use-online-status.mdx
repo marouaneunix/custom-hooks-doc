@@ -1,0 +1,56 @@
+# use-oneline-status hook
+
+## Get Started
+
+import { Callout } from 'nextra-theme-docs'
+
+
+## Description
+
+This hook is used to get the online status of the user. 
+It returns an enum value indicating the user's online status. 
+The possible values are 'ONLINE' and 'OFFLINE'.
+
+## install
+
+You can install the package via npm or yarn:
+
+import { Tab, Tabs } from 'nextra-theme-docs'
+
+<Tabs items={['npm', 'yarn']}>
+  <Tab>
+    ```shell copy
+      npm install -d @melmerrouni/custom-hooks
+      ```
+  </Tab>
+  <Tab>
+    ```bash copy
+     yarn add @melmerrouni/custom-hooks -D
+    ```
+  </Tab>
+</Tabs>
+
+## Example
+
+You just need to import `useOnlineStatus` from `@melmerrouni/custom-hooks`:
+
+```tsx filename="demo.tsx" copy
+
+import {useOnlineStatus} from '@melmerrouni/custom-hooks';
+
+const Target = () => {
+  const {status} = useOnlineStatus();
+
+    return (
+        <>
+            <div className={status} data-testid="target">{status}</div>
+        </>
+    )
+};
+```
+
+## Demo 
+
+import UseOnlineStatusHookDemo from '../components/UseOnlineStatusHookDemo'
+ 
+<UseOnlineStatusHookDemo/>
