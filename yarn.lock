@@ -47,10 +47,10 @@
     "@types/mdx" "^2.0.0"
     "@types/react" ">=16"
 
-"@melmerrouni/custom-hooks@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@melmerrouni/custom-hooks/-/custom-hooks-1.3.2.tgz#9b49d0fd32c6894986233fd6ff0c87eb1c1dca29"
-  integrity sha512-mqkpPi1Vp9Na+qwCtERx2gb1QZXyI2HZLlsxcmuHazNjvezajIlNkYKCvMRiKj1ZG1dApDkfrMMMaSZjRYlwlw==
+"@melmerrouni/custom-hooks@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@melmerrouni/custom-hooks/-/custom-hooks-1.4.0.tgz#7ab8c79c720f94d4d88c283073361ce19520041f"
+  integrity sha512-rF+zNdQKe1QSooaLn/w8l/oHv0v7Z5+XU07cVYOxPDL8GDaiUKhNZCVbBY0EtkBpQ8qdHYjTcE/Y3e2K5HVRmw==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"
